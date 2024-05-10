@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'http://localhost:3000' ||"https://bookfrontend-beta.vercel.app" ,
+    origin: "https://bookbackend-vikashs-projects-f1acf06b.vercel.app" ,
     credentials: true
 
 }));
