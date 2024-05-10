@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:3000' ||"https://bookfrontend-beta.vercel.app" ,
     credentials: true
 
 }));
@@ -33,6 +33,6 @@ app.get('/', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`e-commerce 2 server is running on http://localhost:${port}`)
+    console.log(`Books server is running on http://localhost:${port}`)
 })
 
